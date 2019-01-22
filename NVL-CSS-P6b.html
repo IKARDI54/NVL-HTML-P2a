@@ -1,0 +1,46 @@
+<!--Crea una estructura HTML al que se le puedan aplicar las siguientes reglas de estilo:
+Todos los <p> hijos directos de un <div> deberán tener un borde de 2px, sólido y de color #fabada
+Todos los <p> que sean primer elemento del div deberán tener una clase “importante”.
+Sólos <p> que estén al lado de estos <p> con clase importante tendrán su color de texto a rojo.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctca de selectores</title>
+   <style>
+    div +p{
+        border: 2px solid #fabada
+    }
+    div >p.importante{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <div>
+            <p class="importante">Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
+
+    </div>
+    <section>
+        <p>Parrafo4</p>
+    </section>
+<div>
+    <p class="importante"> Parrafo 5</p>
+    <p>Parrafo 6</p>
+    <p>Parrafo 7</p>
+    <p>Parrafo 8</p>
+
+</div>
+<div>
+        <p class="importante"> Parrafo 9</p>
+        <p>Parrafo 10</p>
+       
+</div>
+</body>
+
+</html>
