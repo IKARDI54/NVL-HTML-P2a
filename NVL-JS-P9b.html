@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <script>
+        var conciertos = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+        var lugares=["Madrid", "Sevilla", "Barcelona", "Valencia", "Zaragoza", "Bilbao", "Donosti"];
+        var result = [];
+
+        var contador = 0;
+        conciertos.forEach( function(item) {
+            result.push(item + "-" + lugares[contador]);  
+            contador ++;  
+        });
+        
+        console.log(result);
+    </script>
+<iframe></iframe>
+</body>
+
+</html>
